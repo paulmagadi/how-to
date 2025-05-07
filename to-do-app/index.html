@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">To Do List</h1>
+        <div class="input-container">
+            <form action="" method="get" class="input-form">
+                <div class="input-group">
+                    <input type="text" name="todo-input" id="todoInput" required>
+                    <label for="todo-input">To Do</label>
+                </div>
+                <button type="button" id="addToDoBtn" onclick="toDoList();" title="Add to list">Add</button>
+            </form>
+        </div>
+        <ul class="list-container">
+            <div class="todo-item">
+                <input type="checkbox">
+                <li>do something </li>
+                <span>&times;</span>
+            </div>
+        </ul>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

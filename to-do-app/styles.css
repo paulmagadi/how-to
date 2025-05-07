@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 50%;
+    max-width: 500px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.input-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.input-group {
+    width: 80%;
+    flex: 1 auto;
+
+}
+
+.input-group {
+    position: relative;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.input-group input {
+    width: 100%;
+    font-size: 1rem;
+    padding: .6em 1em;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    outline: none;
+    background: none;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 0.75rem;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: 0.3s ease;
+    padding: 0.5rem;
+}
+
+input:focus {
+    border: 1px solid blueviolet;
+}
+
+.input-group input:focus+label,
+.input-group input:not(:placeholder-shown):valid+label {
+    top: -0.5rem;
+    left: 0.5rem;
+    font-size: 0.85rem;
+    color: blueviolet;
+    background-color: aliceblue;
+    border-radius: 4px;
+}
+
+
+#addToDoBtn {
+    border: 1px solid blueviolet;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: .6em 1em;
+    outline: none;
+    background: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+
+.list-container {
+    list-style: none;
+}
+
+.todo-item {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.todo-item li {
+    flex: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.todo-item span {
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #b7b5b5;
+    padding: 0 7px;
+    border-radius: 50%;
+    font-weight: 600;
+}
+
+.todo-item span:hover {
+    background-color: #d5d5d5;
+    color: rgb(158, 15, 15);
+}
+
+.checked {
+    text-decoration: line-through;
+    color: #00962b;
+}
