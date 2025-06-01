@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- ========== Sidebar ========== -->
+        <div class="sidebar" id="sidebar">
+            <button id="toggle-btn"><i class="fa-solid fa-angle-left"></i><i class="fas fa-bars"></i></button>
+            <button id="exit-sidebar"><i class="fa-solid fa-xmark"></i></button>
+            <ul>
+                <a href="#">
+                    <li><i class="fas fa-home"></i> <span class="nav-text">Dashboard</span></li>
+                </a>
+                <a href="#">
+                    <li><i class="fas fa-shopping-cart"></i> <span class="nav-text">Orders</span></li>
+                </a>
+                <a href="#">
+                    <li><i class="fas fa-box"></i> <span class="nav-text">Products</span></li>
+                </a>
+                <a href="#">
+                    <li><i class="fas fa-users"></i> <span class="nav-text">Customers</span></li>
+                </a>
+                <a href="#">
+                    <li><i class="fas fa-chart-line"></i> <span class="nav-text">Analytics</span></li>
+                </a>
+            </ul>
+        </div>
+
+        <!--========== Main Content ========== -->
+        <main class="main-content">
+
+            <!-- ========== Header ========== -->
+            <header class="topbar">
+                <button id="toggle-btn-topbar"><i class="fas fa-bars"></i></button>
+                <h1>Responsive Sidebar</h1>
+            </header>
+
+            <!-- ========== Main Section ========== -->
+            <section class="main-section">
+                <h2>Responsive Sidebar</h2><br>
+                <p>This is a simple responsive sidebar layout. The sidebar can be toggled using the button on the top
+                    left.
+                    Resize the window to see how the sidebar adapts to different screen sizes.</p>
+            </section>
+
+            <!-- ========== Footer ========== -->
+            <footer>
+                <p>&copy; 2025 Responsive Sidebar. All rights reserved.</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
